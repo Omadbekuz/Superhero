@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://wallpapercave.com/wp/DDec0uo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#root {
+  max-width: 1440px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.216) !important;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-list {
+  width: 50%;
+  overflow-y: auto;
+  max-height: 80vh;
+  margin-right: 20px;
+}
+
+.hero-list::-webkit-scrollbar {
+  width: 12px; /* Skroll barining kengligi */
+}
+
+.hero-list::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Skrollning orqa fon rangi */
+  border-radius: 10px; /* Burchaklarni yumshatish */
+}
+
+.hero-list::-webkit-scrollbar-thumb {
+  background: #888; /* Skrollning asosiy qismi */
+  border-radius: 10px; /* Burchaklarni yumshatish */
+}
+
+.hero-list::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Hover holatida skrollning rangi o'zgaradi */
+}
+
+/* Skrollni yengilroq qilish */
+.hero-list::-webkit-scrollbar-button {
+  background-color: #888; /* Tugmalarning fon rangi */
+  border-radius: 10px; /* Tugmalarni yumshatish */
+}
+
+.hero-list::-webkit-scrollbar-button:hover {
+  background-color: #555; /* Hover holatida tugma rangini o'zgartiradi */
+}
+
+.hero-card {
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  background-color: #f0f0f0;
+  color: red;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.hero-card:hover {
+  background-color: #e0e0e0;
+}
+
+.hero-details {
+  width: 65%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.hero-image {
+  border-radius: 50%;
+  border: 4px solid #007bff;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.hero-details h2 {
+  margin: 10px 0;
+}
+
+.hero-details p {
+  display: flex;
+  padding: 0 2%;
+  font-size: 1.1em;
+  background-color: #0057b3b7;
+  color: white;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.additional-details {
+  margin-top: 20px;
+  text-align: left;
+}
+/* Media queries - planshet va telefon uchun */
+@media (max-width: 1024px) {
+  /* Planshet uchun */
+  body {
+    padding: 10px;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .search input {
+    width: 80%;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .hero-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-card {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Telefon uchun */
+  body {
+    padding: 5px;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .search input {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .hero-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .hero-card img {
+    width: 150px;
+    height: 150px;
+  }
+}

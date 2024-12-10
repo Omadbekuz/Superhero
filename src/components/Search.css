@@ -1,0 +1,31 @@
+/* Qidiruv bo'limining umumiy tuzilishi */
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  /* Qidiruv maydonining dizayni */
+  .search input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    width: 250px;
+    font-size: 16px;
+    transition: all 0.3s;
+    outline: none;
+  }
+  
+  /* Fokusi holati: qidiruv maydoni */
+  .search input:focus {
+    border-color: #4CAF50;
+  }
+  
+  /* Resizivlik uchun: mobil versiyada qidiruv maydonining kengligi o'zgaradi */
+  @media (max-width: 600px) {
+    .search input {
+      width: 100%;
+    }
+  }
+  
