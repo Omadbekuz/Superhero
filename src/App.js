@@ -123,6 +123,15 @@ function App() {
           <p>No heroes found</p>
         )}
       </div>
+      <div id="Creator">
+        <a
+          href="http://omadbekportfolio.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Created bu UO
+        </a>
+      </div>
     </div>
   );
 }
